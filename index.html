@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Shahid | Technical Writer Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+}
+
+header{
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#1565c0;
+}
+.about{
+    background:#fff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.experience h3{
+    color:#1565c0;
+    margin-top:20px;
+    margin-bottom:5px;
+}
+
+.experience h4{
+    color:#555;
+    font-weight:500;
+    margin-bottom:15px;
+}
+
+.experience ul{
+    padding-left:20px;
+}
+
+.experience li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.experience hr{
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:#1565c0;
+}
+
+#theme{
+cursor:pointer;
+font-size:20px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.hero{
+display:grid;
+grid-template-columns:2fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero h2{
+color:#1565c0;
+margin-bottom:20px;
+}
+
+.hero p{
+line-height:1.8;
+color:#666;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+background:#1565c0;
+color:white;
+border-radius:6px;
+text-decoration:none;
+margin-right:10px;
+}
+
+.btn:hover{
+background:#0d47a1;
+}
+
+.profile{
+width:250px;
+height:250px;
+border-radius:50%;
+overflow:hidden;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h2.title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#1565c0;
+}
+
+.about{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+line-height:1.8;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+
+.skill{
+padding:10px 18px;
+background:#1565c0;
+color:white;
+border-radius:25px;
+font-size:14px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card i{
+font-size:36px;
+color:#1565c0;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#666;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.card a{
+display:inline-block;
+margin-right:10px;
+padding:8px 15px;
+background:#1565c0;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-size:14px;
+}
+
+.contact{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+line-height:2;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#1565c0;
+color:white;
+margin-top:60px;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark header{
+background:#1d1d1d;
+}
+
+.dark nav a{
+color:white;
+}
+
+.dark .card,
+.dark .about,
+.dark .contact{
+background:#1f1f1f;
+color:white;
+}
+
+.dark .card p,
+.dark .about p{
+color:#ddd;
+}
+
+@media(max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Portfolio</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div id="theme">
+<i class="fas fa-moon"></i>
+</div>
+
+</nav>
+
+</header>
+
+<section id="home" class="hero">
+
+<div>
+
+<h1>Mohammad Shahid</h1>
+
+<h2>Senior Technical Writer</h2>
+
+<p>
+
+Experienced Technical Writer specializing in Aviation Documentation, Enterprise Software, User Manuals, Installation Guides, Knowledge Base Articles, Release Notes, Process Documentation, and SaaS documentation.
+
+</p>
+
+<a href="#portfolio" class="btn">View Portfolio</a>
+
+<a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+
+</div>
+
+<div class="profile">
+
+<img src="assets/img/photo.jpg" alt="Profile">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">Professional Experience</h2>
+
+<div class="about">
+
+<div class="experience">
+
+ 
+    <h3>Technical Writer - Software Documentation</h3>
+    
+
+    <ul>
+        <li>Developed User Guides, Deployment Guides, FAQs, and Process Documentation.</li>
+        <li>Created documentation for IoT platforms and enterprise applications.</li>
+        <li>Maintained Knowledge Base articles and troubleshooting documentation.</li>
+        <li>Worked with Agile teams using Jira and Confluence.</li>
+    </ul> <hr>
+    <h3>Technical Data Author</h3>
+    <h4>Aviation Procedural Documentation</h4>
+
+    <ul>
+        <li>Prepared Aircraft Maintenance Manuals (ATA 21, ATA 34, ATA 52).</li>
+        <li>Created Component Maintenance Manuals and Illustrated Parts Catalogs.</li>
+        <li>Worked with ATA iSpec 2200 standards and aerospace documentation.</li>
+        <li>Reviewed engineering drawings and technical changes.</li>
+    </ul><hr>
+  <h3>Technical Writer - Organizational Change Managementn</h3>
+<h4>IT Processes and Managed Services</h4>
+<ul>
+    
+    <li>Developed and maintained Knowledge Base (KB) articles for IT support and managed services.</li>
+
+ <li>Collaborated with IT engineers, support teams, and subject matter experts to produce accurate technical documentation.</li>
+
+    <li>Created user-friendly documentation for enterprise IT operations and internal support teams.</li>
+
+    <li>Documented hardware lifecycle processes, including asset provisioning, accessory rack maintenance, and asset return workflows.</li>
+
+   
+
+    <li>Updated documentation based on product enhancements, process improvements, and customer feedback.</li>
+
+    <li>Ensured documentation quality, consistency, and adherence to organizational documentation standards.</li>
+
+</ul>
+   
+
+</div>
+
+</div>
+
+</section>
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Technical Writing</div>
+<div class="skill">MadCap Flare</div>
+<div class="skill">Adobe FrameMaker</div>
+<div class="skill">DITA XML</div>
+<div class="skill">Markdown</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Confluence</div>
+<div class="skill">JIRA</div>
+<div class="skill">Git</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="cards">
+
+
+<!-- Portfolio Card 3 -->
+
+<div class="card">
+
+    <i class="fas fa-plane"></i>
+
+    <h3>Functional Guide</h3>
+
+    <p>
+        A SOP that explains the actual functionality of a application for a real-time use.
+    </p>
+
+    <a href="samples/fg.pdf" target="_blank">Preview</a>
+    <a href="samples/fg.pdf" download>Download</a>
+
+</div>
+
+<!-- Portfolio Card 4 -->
+
+<div class="card">
+
+    <i class="fas fa-book"></i>
+
+    <h3>User Manual</h3>
+
+    <p>
+        Enterprise software user guide with step-by-step procedures,
+        screenshots, and workflows.
+    </p>
+
+    <a href="samples/UserManual.pdf" target="_blank">Preview</a>
+    <a href="samples/UserManual.pdf" download>Download</a>
+
+</div>
+
+<!-- Portfolio Card 5 -->
+
+<div class="card">
+
+    <i class="fas fa-download"></i>
+
+    <h3>Installation Guide</h3>
+
+    <p>
+        Installation and configuration guide for enterprise software
+        deployment.
+    </p>
+
+    <a href="samples/InstallationGuide.pdf" target="_blank">Preview</a>
+    <a href="samples/InstallationGuide.pdf" download>Download</a>
+
+</div>
+
+<!-- Portfolio Card 6 -->
+
+<div class="card">
+
+    <i class="fas fa-code-branch"></i>
+
+    <h3>Release Notes</h3>
+
+    <p>
+        Product release documentation highlighting enhancements,
+        bug fixes, and known issues.
+    </p>
+
+    <a href="samples/ReleaseNotes.pdf" target="_blank">Preview</a>
+    <a href="samples/ReleaseNotes.pdf" download>Download</a>
+
+</div>
+
+<!-- Portfolio Card 7 -->
+
+<div class="card">
+
+    <i class="fas fa-circle-question"></i>
+
+    <h3>Knowledge Base</h3>
+
+    <p>
+        Troubleshooting articles, FAQs, and self-service documentation
+        for enterprise users.
+    </p>
+
+    <a href="samples/KnowledgeBase.pdf" target="_blank">Preview</a>
+    <a href="samples/KnowledgeBase.pdf" download>Download</a>
+
+</div>
+
+<!-- Portfolio Card 8 -->
+
+<div class="card">
+
+    <i class="fas fa-network-wired"></i>
+
+    <h3>FAQ</h3>
+
+    <p>
+        Documentation covering IoT device deployment, onboarding,
+        monitoring, and troubleshooting.
+    </p>
+
+    <a href="samples/FAQs.pdf" target="_blank">Preview</a>
+    <a href="samples/FAQs.pdf" download>Download</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p><strong>Name:</strong> Mohammad Shahid</p>
+
+<p><strong>Designation:</strong> Senior Technical Writer</p>
+
+<p><strong>Email:</strong> anmoshahid@outlook.com</p>
+
+<p><strong>Phone:</strong> +91 9063887770</p>
+
+<p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Portfolio built for recruiter reference on 6/7/26</p>
+
+</footer>
+
+<script>
+
+const theme=document.getElementById("theme");
+
+theme.onclick=function(){
+
+document.body.classList.toggle("dark");
+
+const icon=theme.querySelector("i");
+
+if(document.body.classList.contains("dark")){
+
+icon.classList.remove("fa-moon");
+icon.classList.add("fa-sun");
+
+}else{
+
+icon.classList.remove("fa-sun");
+icon.classList.add("fa-moon");
+
+}
+
+};
+
+</script>
+
+</body>
+
+</html>
